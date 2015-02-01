@@ -8,5 +8,5 @@ sudo apt-get update && sudo apt-get install -y mongodb-org
 mkdir ~/npm
 npm config set prefix ~/npm
 export PATH="$PATH:$HOME/npm/bin"
-echo export PATH="$PATH:$HOME/npm/bin" >> ~/.bashrc && source ~/.bashrc
+echo export PATH="$PATH:$HOME/npm/bin" >> ~/.bashrc 
 npm install -g generator-keystone
