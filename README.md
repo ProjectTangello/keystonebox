@@ -7,6 +7,6 @@ Vagrant files for keystone
 
 Then inside the virtual machine:
 	
-	sh /vagrant/install.sh ; source .bashrc
+	cat /vagrant/install.sh | dos2unix | sh ; source .bashrc
 	yo keystone
 
