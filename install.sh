@@ -1,5 +1,5 @@
 sudo apt-get update && sudo apt-get -y upgrade
-sudo apt-get -y install python-software-properties curl build-essential
+sudo apt-get -y install python-software-properties curl build-essential dos2unix
 sudo curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get -y install nodejs
 sudo apt-key  adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
