@@ -1,5 +1,5 @@
 sudo apt-get update && sudo apt-get -y upgrade
-sudo apt-get -y install python-software-properties curl build-essential dos2unix
+sudo apt-get -y install python-software-properties curl build-essential
 sudo curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get -y install nodejs
 sudo apt-key  adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
@@ -8,5 +8,5 @@ sudo apt-get update && sudo apt-get install -y mongodb-org
 mkdir ~/npm
 npm config set prefix ~/npm
 export PATH="$PATH:$HOME/npm/bin"
-echo export PATH="$PATH:$HOME/npm/bin" >> ~/.bashrc 
-npm install -g generator-keystone
+echo export PATH="$PATH:$HOME/npm/bin" >> ~/.bashrc
+npm install -g generator-keystone gulp bower
