@@ -9,4 +9,5 @@ Then inside the virtual machine:
 
 	sudo apt-get install dos2unix -y
 	cat /vagrant/install.sh | dos2unix | sh ; source .bashrc
-	yo keystone
+	~~yo keystone~~
+	cd keystone-project; npm install

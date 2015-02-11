@@ -12,19 +12,24 @@ var keystone = require('keystone');
 keystone.init({
 
 	'name': 'Tangelo',
+	// Showed on top left admin panel
 	'brand': 'Tangelo',
-	
+
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': '6+*AS;*y:s9Z_DIH3FJ1a|iA;F3a,ci81?,IyK*fA*GM&B%$h9Cze@LH&PAiFXs*'
+
+	'host': process.env.IP || '127.0.0.1',
+	'port': process.env.PORT || 3000,
+	'env': process.env.NODE_ENV || 'development',
+	'cookie secret': process.env.cookie_secret || 'default'
 
 });
 
@@ -37,7 +42,7 @@ keystone.import('models');
 // for each request) should be added to ./routes/middleware.js
 
 keystone.set('locals', {
-	_: require('underscore'),
+	_: require('lodash'),
 	env: keystone.get('env'),
 	utils: keystone.utils,
 	editable: keystone.content.editable
