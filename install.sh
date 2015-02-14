@@ -9,4 +9,8 @@ mkdir ~/npm
 npm config set prefix ~/npm
 export PATH="$PATH:$HOME/npm/bin"
 echo export PATH="$PATH:$HOME/npm/bin" >> ~/.bashrc
-npm install -g generator-keystone gulp bower
+sudo npm install -g generator-keystone gulp bower
+
+git clone https://github.com/ProjectTangelo/frontend-poc.git keystone-project
+cd keystone-project
+sudo npm install
