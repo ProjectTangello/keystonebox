@@ -14,6 +14,6 @@ sudo npm install -g generator-keystone gulp bower
 echo "cd keystone-project; node keystone.js" > run
 chmod a+x run
 
-git clone https://github.com/ProjectTangelo/frontend-poc.git keystone-project
+git clone git@github.com:ProjectTangelo/frontend-poc.git keystone-project
 cd keystone-project
 sudo npm install
