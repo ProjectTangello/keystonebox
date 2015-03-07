@@ -1,0 +1,4 @@
+[submodule "server"]
+	path = server
+	url = git@github.com:ProjectTangelo/frontend-poc.git
+	branch = FEATHER
