@@ -3,8 +3,7 @@ require 'rbconfig'
 
 def os
   @os ||= (
-    # host_os = RbConfig::CONFIG['host_os']
-    host_os = 'cygwin'
+    host_os = RbConfig::CONFIG['host_os']
     case host_os
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       :windows
@@ -26,6 +25,8 @@ Vagrant.configure(2) do |config|
 
   if os == :windows
     config.vm.synced_folder ".", "/vagrant", type: "rsync", rsync__exclude: "**/node_modules/"
+  else
+    config.vm.synced_folder ".", "/vagrant"
   end
 
   config.vm.provider "virtualbox" do |vb|
