@@ -17,5 +17,6 @@ npm config set prefix ~/npm
 export PATH="$PATH:$HOME/npm/bin"
 echo export PATH="$PATH:$HOME/npm/bin" >> ~/.bashrc
 
-
+# get front end
+cd /vagrant && git clone -b FEATHER git@github.com:ProjectTangelo/frontend-poc.git
 cd /vagrant/server && sudo npm install
