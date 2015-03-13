@@ -20,7 +20,7 @@ Inside the virtual machine, install server dependancies
 cd /vagrant/server
 sudo npm install
 ```
-Run the following command to start the server on [http://33.33.33.10:3000](http://33.33.33.10:3000)
+Run the following command to start the server on [http://33.33.33.10](http://33.33.33.10)
 
 ```bash
 cd /vagrant/server
