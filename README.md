@@ -15,7 +15,12 @@ vagrant up
 vagrant ssh
 ```
 
-Inside the virtual machine, run the following command to start the server on [http://33.33.33.10:3000](http://33.33.33.10:3000)
+Inside the virtual machine, install server dependancies
+```bash
+cd /vagrant/server
+sudo npm install
+```
+Run the following command to start the server on [http://33.33.33.10:3000](http://33.33.33.10:3000)
 
 ```bash
 cd /vagrant/server
