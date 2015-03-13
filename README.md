@@ -3,12 +3,13 @@ Vagrant box for Tangelo's master server
 
 ## Usage
 
-If you didn't add "--recursive" to your git clone command on this repository:
+
+### Starting
+Clone the frontend master server
 ```bash
 git clone git@github.com:ProjectTangelo/frontend-poc.git ./server
 ```
-
-### Getting started
+Start vagrant and connect
 ```bash
 vagrant up
 vagrant ssh
@@ -18,7 +19,7 @@ Inside the virtual machine, run the following command to start the server on [ht
 
 ```bash
 cd /vagrant/server
-node server
+node tangelo
 ```
 
 ##### Syncing on windows
