@@ -24,7 +24,7 @@ Run the following command to start the server on [http://33.33.33.10:3000](http:
 
 ```bash
 cd /vagrant/server
-node tangelo
+sudo node tangelo
 ```
 
 ##### Syncing on windows
